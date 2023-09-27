@@ -1,0 +1,28 @@
+.header {
+	background-color: #bfe5ec;
+
+	.sub-header {
+		background-color: #f16964;
+		width: 100%;
+		max-width: 648px;
+		max-height: 97px;
+		border-radius: 8px;
+		margin-top: 1.2rem;
+
+		&-icon {
+			margin-top: -1rem;
+			background-color: #398d9c;
+			width: 112px;
+			height: 112px;
+			border-radius: 8px;
+			display: grid;
+			place-content: center;
+			padding: 12px;
+		}
+	}
+
+	.user-icon {
+		width: 140px;
+		height: 140px;
+	}
+}
