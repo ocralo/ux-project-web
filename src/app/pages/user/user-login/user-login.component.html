@@ -1,34 +1,40 @@
 <div class="component">
-  <mat-card class="card">
-    <img src="assets/svg/women-logo.svg" alt="logo" srcset="" />
-    <br>
-    <mat-card-title class="title">Iniciar Sesión</mat-card-title>
-    <mat-card-content style="width: 100%;">
-      <br>
-      <p>
-        <mat-form-field class="input">
-          <input type="text" matInput placeholder="Nombre Usuario" formControlName="username">
-        </mat-form-field>
-      </p>
+	<mat-card class="card">
+		<img src="assets/svg/women-logo.svg" alt="logo" srcset="" />
+		<br />
+		<mat-card-title class="title">Iniciar Sesión</mat-card-title>
+		<mat-card-content style="width: 100%">
+			<br />
+			<p>
+				<mat-form-field class="input">
+					<input
+						type="text"
+						matInput
+						placeholder="Nombre Usuario"
+						formControlName="username" />
+				</mat-form-field>
+			</p>
 
-      <p>
-        <mat-form-field class="input">
-          <input type="password" matInput placeholder="Contraseña" formControlName="password">
-        </mat-form-field>
-      </p>
-      <div>
-        <a type="button" href="/home" class="button-login btn-lg">
-          Iniciar Sesion
-        </a>
-      </div>
-      <br>
-      <div>
-        <a type="button" href="/singup" class="button-register btn-lg">
-          Registrarse
-        </a>
-      </div>
-
-
-    </mat-card-content>
-  </mat-card>
+			<p>
+				<mat-form-field class="input">
+					<input
+						type="password"
+						matInput
+						placeholder="Contraseña"
+						formControlName="password" />
+				</mat-form-field>
+			</p>
+			<div>
+				<a type="button" href="/home" class="button-login btn-lg">
+					Iniciar Sesion
+				</a>
+			</div>
+			<br />
+			<div>
+				<a type="button" href="/singup" class="button-register btn-lg">
+					Registrarse
+				</a>
+			</div>
+		</mat-card-content>
+	</mat-card>
 </div>
