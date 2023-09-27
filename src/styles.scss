@@ -113,3 +113,8 @@ body {
 	margin: 0;
 	font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
+
+// add tailwindcss
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
