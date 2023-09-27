@@ -1,0 +1,16 @@
+.navBar {
+	background-color: #fff;
+
+	.header {
+		&-title {
+			font-size: 1.5rem;
+		}
+
+		&-button {
+			&-logout {
+				border: solid 1px #d63029;
+				border-radius: 100px;
+			}
+		}
+	}
+}
