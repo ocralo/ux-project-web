@@ -1,17 +1,11 @@
+import { UserSingupComponent } from './pages/user/user-singup/user-singup.component'
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
+import { UserLoginComponent } from './pages/user/user-login/user-login.component'
 
 const routes: Routes = [
-	{
-		path: 'login',
-		loadChildren: () =>
-			import('./pages/login/login.module').then((m) => m.LoginModule),
-	},
-	{
-		path: 'singup',
-		loadChildren: () =>
-			import('./pages/singup/singup.module').then((m) => m.SingupModule),
-	},
+	{ path: '', component: UserLoginComponent, pathMatch: 'full' },
+	{ path: 'singup', component: UserSingupComponent, pathMatch: 'full' },
 	{
 		path: 'home',
 		loadChildren: () =>
