@@ -92,7 +92,7 @@ $ux-project-web-theme: mat.define-light-theme(
 		color: (
 			primary: $ux-project-web-custom-primary,
 			secondary: $ux-project-web-custom-secondary,
-			accent: $ux-project-web-accent,
+			accent: $ux-project-web-custom-secondary,
 			warn: $ux-project-web-warn,
 		),
 	)
