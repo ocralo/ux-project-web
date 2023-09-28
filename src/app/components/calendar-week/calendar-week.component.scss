@@ -1,0 +1,50 @@
+.calendar {
+	@apply relative;
+
+	.selector-line {
+		@apply absolute  h-1 rounded-full;
+
+		background-color: #7a757f;
+		content: '';
+		width: 96%;
+		top: 42%;
+		left: 4%;
+
+		&::before {
+			@apply absolute w-3 h-3 rounded-full;
+
+			background-color: #7a757f;
+			content: '';
+			top: -4px;
+			left: -6px;
+		}
+	}
+
+	&-content {
+		@apply grid grid-cols-7 gap-x-3 gap-y-1 mt-3 relative;
+
+		grid-template-rows: 60px repeat(5, minmax(0, 1fr)) 50px;
+
+		width: 1032px;
+		height: 554px;
+		background-color: #bfe5ec;
+		border-radius: 12px;
+
+		.title-header {
+			@apply text-xs text-center py-4 font-bold;
+
+			color: #6b7a99;
+		}
+
+		.description-card {
+			@apply font-medium;
+
+			font-size: 10px;
+			color: #4d5e80;
+		}
+
+		.text-8 {
+			font-size: 8px;
+		}
+	}
+}
