@@ -1,0 +1,40 @@
+.calendar {
+	@apply relative;
+
+	&-border-color {
+		border-color: #69c6d8;
+	}
+
+	&-content {
+		@apply grid mt-3 relative;
+
+		grid-template-rows: repeat(5, minmax(0, 1fr));
+		grid-template-columns: repeat(7, minmax(0, 1fr));
+
+		width: 1032px;
+		height: 554px;
+		background-color: #bfe5ec;
+		border-radius: 12px;
+
+		.text-8 {
+			font-size: 8px;
+		}
+	}
+}
+
+.circle-event {
+	@apply w-2 h-2 rounded-full;
+
+	&-1 {
+		background-color: #525252;
+	}
+
+  &-2 {
+		background-color: #8d8d8d;
+	}
+
+  &-3 {
+		background-color: #343434;
+	}
+}
+

@@ -1,0 +1,29 @@
+.button-rounded {
+	@apply font-bold text-xs border-2 border-black rounded-full w-10 h-10;
+
+	&-arrow {
+		@apply w-10 h-10 p-0;
+
+		width: 40px !important;
+	}
+}
+
+.button-group {
+	&-solid {
+		@apply rounded-full text-xs font-bold;
+
+		border: 2px solid black;
+
+		&__selected {
+			color: #c82a24 !important;
+		}
+		&__not-selected {
+			color: #ecc6bf !important;
+		}
+
+		&__black {
+			border-color: black !important;
+			border-left-width: 2px !important;
+		}
+	}
+}

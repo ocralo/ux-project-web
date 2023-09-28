@@ -1,0 +1,52 @@
+<section>
+	<nav class="max-w-screen-xl mx-auto mt-11">
+		<div class="flex items-center justify-between">
+			<button mat-stroked-button class="button-rounded">Hoy</button>
+			<div class="flex items-center gap-8">
+				<button
+					mat-stroked-button
+					class="button-rounded button-rounded-arrow w-4 h-4">
+					<figure class="user-icon">
+						<img src="assets/svg/arrow-open-ligth.svg" alt="user" />
+					</figure>
+				</button>
+				<p class="text-8 font-bold">May 21 – 26, 2045</p>
+				<button
+					mat-stroked-button
+					class="button-rounded button-rounded-arrow w-4 h-4">
+					<figure class="transform rotate-180 user-icon">
+						<img src="assets/svg/arrow-open-ligth.svg" alt="user" />
+					</figure>
+				</button>
+			</div>
+			<mat-button-toggle-group
+				name="fontStyle"
+				aria-label="Font Style"
+				class="button-group-solid">
+				<mat-button-toggle
+					value="bold"
+					class="button-group-solid__not-selected px-4"
+					>Año</mat-button-toggle
+				>
+				<mat-button-toggle
+					class="button-group-solid__black button-group-solid__selected px-4"
+					value="italic"
+					>Semana</mat-button-toggle
+				>
+				<mat-button-toggle
+					class="button-group-solid__black button-group-solid__not-selected px-4"
+					value="italic"
+					>Mes</mat-button-toggle
+				>
+				<mat-button-toggle
+					class="button-group-solid__not-selected button-group-solid__black px-4"
+					value="underline"
+					>Dia</mat-button-toggle
+				>
+			</mat-button-toggle-group>
+		</div>
+	</nav>
+	<main class="max-w-screen-xl mx-auto">
+		<app-calendar-month></app-calendar-month>
+	</main>
+</section>
