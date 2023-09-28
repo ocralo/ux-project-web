@@ -10,6 +10,7 @@ import { HeaderComponent } from '../../components/header/header.component'
 import { CalendarViewComponent } from 'src/app/components/calendar-view/calendar-view.component'
 import { CalendarWeekComponent } from 'src/app/components/calendar-week/calendar-week.component'
 import { CalendarMonthComponent } from '../../components/calendar-month/calendar-month.component'
+import { CalendarDayComponent } from '../../components/calendar-day/calendar-day.component'
 
 @NgModule({
 	declarations: [
@@ -18,6 +19,7 @@ import { CalendarMonthComponent } from '../../components/calendar-month/calendar
 		CalendarViewComponent,
 		CalendarWeekComponent,
 		CalendarMonthComponent,
+		CalendarDayComponent,
 	],
 	imports: [
 		CommonModule,

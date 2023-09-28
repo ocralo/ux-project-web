@@ -1,0 +1,93 @@
+.calendar {
+	@apply relative;
+
+	.selector-line {
+		@apply absolute  h-1 rounded-full;
+
+		background-color: #7a757f;
+		content: '';
+		width: 96%;
+		top: 42.5%;
+		left: 4%;
+
+		&::before {
+			@apply absolute w-3 h-3 rounded-full;
+
+			background-color: #7a757f;
+			content: '';
+			top: -4px;
+			left: -6px;
+		}
+	}
+
+	&-border-color {
+		border-color: #69c6d8;
+	}
+
+	&-content {
+		@apply grid mt-3 relative;
+
+		grid-template-rows: repeat(12, minmax(0, 1fr));
+		grid-template-columns: 60px 60px repeat(5, minmax(0, 1fr));
+
+		width: 1032px;
+		height: 554px;
+		background-color: #bfe5ec;
+		border-radius: 12px;
+
+		.text-8 {
+			font-size: 8px;
+		}
+
+		@for $i from 8 through 15 {
+			.row-start-#{$i} {
+				grid-row-start: #{$i};
+			}
+
+			.row-end-#{$i} {
+				grid-row-end: #{$i};
+			}
+
+			.col-start-#{$i} {
+				grid-column-start: #{$i};
+			}
+
+			.col-end-#{$i} {
+				grid-column-end: #{$i};
+			}
+		}
+
+		.init-line {
+			border-bottom: 1px solid black;
+			border-right: 1px solid black;
+
+			&:first-of-type {
+				border-top: 0px;
+			}
+
+			&:last-of-type {
+				border-bottom: 0px;
+			}
+		}
+
+		.content-hour {
+			border-bottom: 1px solid black;
+		}
+	}
+}
+
+.circle-event {
+	@apply w-2 h-2 rounded-full;
+
+	&-1 {
+		background-color: #525252;
+	}
+
+	&-2 {
+		background-color: #8d8d8d;
+	}
+
+	&-3 {
+		background-color: #343434;
+	}
+}

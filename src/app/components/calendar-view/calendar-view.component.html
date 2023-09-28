@@ -29,24 +29,41 @@
 					>Año</mat-button-toggle
 				>
 				<mat-button-toggle
-					class="button-group-solid__black button-group-solid__selected px-4"
+					class="button-group-solid__black px-4"
+					[ngClass]="{
+						'button-group-solid__selected': selectWeek === 0,
+						'button-group-solid__not-selected': selectWeek !== 0
+					}"
 					value="italic"
+					(click)="setWeek(0)"
 					>Semana</mat-button-toggle
 				>
 				<mat-button-toggle
-					class="button-group-solid__black button-group-solid__not-selected px-4"
+					class="button-group-solid__black px-4"
 					value="italic"
+					[ngClass]="{
+						'button-group-solid__selected': selectWeek === 1,
+						'button-group-solid__not-selected': selectWeek !== 1
+					}"
+					(click)="setWeek(1)"
 					>Mes</mat-button-toggle
 				>
 				<mat-button-toggle
-					class="button-group-solid__not-selected button-group-solid__black px-4"
+					class="button-group-solid__black px-4"
 					value="underline"
+					[ngClass]="{
+						'button-group-solid__selected': selectWeek === 2,
+						'button-group-solid__not-selected': selectWeek !== 2
+					}"
+					(click)="setWeek(2)"
 					>Dia</mat-button-toggle
 				>
 			</mat-button-toggle-group>
 		</div>
 	</nav>
 	<main class="max-w-screen-xl mx-auto">
-		<app-calendar-month></app-calendar-month>
+		<app-calendar-day *ngIf="selectWeek === 2"></app-calendar-day>
+		<app-calendar-month *ngIf="selectWeek === 1"></app-calendar-month>
+		<app-calendar-week *ngIf="selectWeek === 0"></app-calendar-week>
 	</main>
 </section>
